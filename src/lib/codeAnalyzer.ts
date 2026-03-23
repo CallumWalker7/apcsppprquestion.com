@@ -10,7 +10,7 @@ export function detectLanguage(code: string, hint = ""): string {
 }
 
 function unique(arr: string[]): string[] {
-  return [...new Set(arr)];
+  return Array.from(new Set(arr));
 }
 
 function findProcedures(code: string, lang: string) {
